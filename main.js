@@ -782,7 +782,7 @@ var PrincipalComponent = /** @class */ (function () {
                         heure: this.formatDate(date_1, "date"),
                         temperature: temperature_1,
                         //image: temps+" ("+description+")"
-                        image: "http://openweathermap.org/img/w/" + icone_1 + ".png"
+                        image: "https://openweathermap.org/img/w/" + icone_1 + ".png"
                     };
                     //On l'ajoute à l'entryData
                     entryData.push(elem_1);
@@ -809,7 +809,7 @@ var PrincipalComponent = /** @class */ (function () {
                         heure: this.formatDate(date_2, "date"),
                         temperature: temperature_2,
                         //image: temps+" ("+description+")"
-                        image: "http://openweathermap.org/img/w/" + icone_2 + ".png"
+                        image: "https://openweathermap.org/img/w/" + icone_2 + ".png"
                     };
                     //On l'ajoute à l'entryData
                     entryData.push(elem);

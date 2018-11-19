@@ -125,7 +125,7 @@ export class PrincipalComponent implements OnInit {
             heure: this.formatDate(date,"date"),
             temperature: temperature,
             //image: temps+" ("+description+")"
-            image: "http://openweathermap.org/img/w/"+icone+".png"
+            image: "https://openweathermap.org/img/w/"+icone+".png"
           };
       
           //On l'ajoute à l'entryData
@@ -156,7 +156,7 @@ export class PrincipalComponent implements OnInit {
             heure: this.formatDate(date,"date"),
             temperature: temperature,
             //image: temps+" ("+description+")"
-            image: "http://openweathermap.org/img/w/"+icone+".png"
+            image: "https://openweathermap.org/img/w/"+icone+".png"
           };
       
           //On l'ajoute à l'entryData
