@@ -1,0 +1,27 @@
+#header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #ccc;
+    max-height: 100px;
+}
+
+#banner{
+    width: 100%;
+}
+
+#tdTitle{
+    width: 80%;
+    text-align: center;
+}
+
+#tdIconLeft{
+    width:10%;
+    text-align: center;
+}
+
+#tdIconRight{
+    width:10%;
+    text-align: center;
+}

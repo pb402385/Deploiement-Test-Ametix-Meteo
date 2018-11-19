@@ -1,0 +1,308 @@
+<div id="errorLogDiv" *ngIf="errorLog !== '' && errorLog !== null">
+    <p id="errorLog">{{errorLog}}</p>
+</div>
+
+<mat-accordion *ngIf="elem !== null">
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header [collapsedHeight]="'120px'" [expandedHeight]="'120px'">
+          <mat-panel-description class="faq_panel_detail">
+              <table>
+                <tr>
+                  <td>
+                      {{formatDate(elem.list[0].dt)}}
+                  </td>
+                  <td>
+                      <img src="http://openweathermap.org/img/w/{{elem.list[0].weather[0].icon}}.png" />
+                  </td>
+                  <td>
+                      {{elem.city.name}} ({{elem.city.country}})
+                  </td>
+                </tr>
+              </table>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div>
+            <table>
+
+                <tr>
+                  <td>
+                      Température: {{elem.list[0].main.temp}}°C
+                  </td>
+                  <td>
+                      TempératureMax: <span style="color:red">{{elem.list[0].main.temp_max}}°C</span>
+                  </td>
+                  <td>
+                      TempératureMin: <span style="color:blue">{{elem.list[0].main.temp_min}}°C</span>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Pression: {{elem.list[0].main.pressure}}
+                    </td>
+                    <td>
+                        Humidité: {{elem.list[0].main.humidity}}
+                    </td>
+                    <td>
+                        Vitesse vent: {{elem.list[0].wind.speed}}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[0].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.list[0].weather[0].main}}
+                    </td>
+                    <td>
+                        ({{elem.list[0].weather[0].description}})
+                    </td>
+                </tr>
+              </table>
+        </div>       
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header [collapsedHeight]="'120px'" [expandedHeight]="'120px'">
+          <mat-panel-description class="faq_panel_detail">
+              <table>
+                  <tr>
+                    <td>
+                        {{formatDate(elem.list[7].dt)}}
+                    </td>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[7].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.city.name}} ({{elem.city.country}})
+                    </td>
+                  </tr>
+                </table>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div>
+            <table>
+
+                <tr>
+                  <td>
+                      Température: {{elem.list[7].main.temp}}°C
+                  </td>
+                  <td>
+                      TempératureMax: <span style="color:red">{{elem.list[7].main.temp_max}}°C</span>
+                  </td>
+                  <td>
+                      TempératureMin: <span style="color:blue">{{elem.list[7].main.temp_min}}°C</span>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Pression: {{elem.list[7].main.pressure}}
+                    </td>
+                    <td>
+                        Humidité: {{elem.list[7].main.humidity}}
+                    </td>
+                    <td>
+                        Vitesse vent: {{elem.list[7].wind.speed}}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[7].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.list[7].weather[0].main}}
+                    </td>
+                    <td>
+                        ({{elem.list[7].weather[0].description}})
+                    </td>
+                </tr>
+              </table>
+        </div>       
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header [collapsedHeight]="'120px'" [expandedHeight]="'120px'">
+          <mat-panel-description class="faq_panel_detail">
+              <table>
+                  <tr>
+                    <td>
+                        {{formatDate(elem.list[15].dt)}}
+                    </td>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[15].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.city.name}} ({{elem.city.country}})
+                    </td>
+                  </tr>
+                </table>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div>
+            <table>
+
+                <tr>
+                  <td>
+                      Température: {{elem.list[15].main.temp}}°C
+                  </td>
+                  <td>
+                      TempératureMax: <span style="color:red">{{elem.list[15].main.temp_max}}°C</span>
+                  </td>
+                  <td>
+                      TempératureMin: <span style="color:blue">{{elem.list[15].main.temp_min}}°C</span>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Pression: {{elem.list[15].main.pressure}}
+                    </td>
+                    <td>
+                        Humidité: {{elem.list[15].main.humidity}}
+                    </td>
+                    <td>
+                        Vitesse vent: {{elem.list[15].wind.speed}}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[15].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.list[15].weather[0].main}}
+                    </td>
+                    <td>
+                        ({{elem.list[15].weather[0].description}})
+                    </td>
+                </tr>
+              </table>
+        </div>       
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header [collapsedHeight]="'120px'" [expandedHeight]="'120px'">
+          <mat-panel-description class="faq_panel_detail">
+              <table>
+                  <tr>
+                    <td>
+                        {{formatDate(elem.list[23].dt)}}
+                    </td>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[23].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.city.name}} ({{elem.city.country}})
+                    </td>
+                  </tr>
+                </table>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div>
+            <table>
+
+                <tr>
+                  <td>
+                      Température: {{elem.list[23].main.temp}}°C
+                  </td>
+                  <td>
+                      TempératureMax: <span style="color:red">{{elem.list[23].main.temp_max}}°C</span>
+                  </td>
+                  <td>
+                      TempératureMin: <span style="color:blue">{{elem.list[23].main.temp_min}}°C</span>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Pression: {{elem.list[23].main.pressure}}
+                    </td>
+                    <td>
+                        Humidité: {{elem.list[23].main.humidity}}
+                    </td>
+                    <td>
+                        Vitesse vent: {{elem.list[23].wind.speed}}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[23].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.list[23].weather[0].main}}
+                    </td>
+                    <td>
+                        ({{elem.list[23].weather[0].description}})
+                    </td>
+                </tr>
+              </table>
+        </div>       
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header [collapsedHeight]="'120px'" [expandedHeight]="'120px'">
+          <mat-panel-description class="faq_panel_detail">
+              <table>
+                  <tr>
+                    <td>
+                        {{formatDate(elem.list[31].dt)}}
+                    </td>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[31].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.city.name}} ({{elem.city.country}})
+                    </td>
+                  </tr>
+                </table>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div>
+            <table>
+
+                <tr>
+                  <td>
+                      Température: {{elem.list[31].main.temp}}°C
+                  </td>
+                  <td>
+                      TempératureMax: <span style="color:red">{{elem.list[31].main.temp_max}}°C</span>
+                  </td>
+                  <td>
+                      TempératureMin: <span style="color:blue">{{elem.list[31].main.temp_min}}°C</span>
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Pression: {{elem.list[31].main.pressure}}
+                    </td>
+                    <td>
+                        Humidité: {{elem.list[31].main.humidity}}
+                    </td>
+                    <td>
+                        Vitesse vent: {{elem.list[31].wind.speed}}
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="http://openweathermap.org/img/w/{{elem.list[31].weather[0].icon}}.png" />
+                    </td>
+                    <td>
+                        {{elem.list[31].weather[0].main}}
+                    </td>
+                    <td>
+                        ({{elem.list[31].weather[0].description}})
+                    </td>
+                </tr>
+              </table>
+        </div>       
+    </mat-expansion-panel>
+
+
+  <mat-accordion>

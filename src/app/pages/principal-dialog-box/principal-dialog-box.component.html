@@ -1,0 +1,11 @@
+<h1 style="border-bottom: 2px solid black;" at-dialog-title></h1>
+<div mat-dialog-content>
+  <p>Veuillez entrer une ville:</p>
+  <label for="uname" id="label_ville">Ville:&nbsp;</label>
+  <input type="text" id="villeToSend" name="villeToSend" value="{ville}" required minlength="3" placeholder="Ville" [(ngModel)]="ville" (keyup)="verifyVille();" (blur)="verifyVille();" />
+</div>
+<div mat-dialog-actions>
+  <button id="buttonCancelSendVille" class="buttonDialog" mat-button (click)="onCancel()">Annuler</button>
+  <button id="buttonSendVille" class="buttonDialog" *ngIf="verifyVille() == true" mat-button [mat-dialog-close]="data" cdkFocusInitial>Envoyer</button>
+  <button class="buttonDialog" *ngIf="verifyVille() == false" mat-button disabled>Envoyer</button>
+</div>
