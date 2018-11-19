@@ -1030,8 +1030,8 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-var API_URL = "http://api.openweathermap.org/data/2.5/weather";
-var API_URL_ID = "http://api.openweathermap.org/data/2.5/forecast";
+var API_URL = "https://api.openweathermap.org/data/2.5/weather";
+var API_URL_ID = "https://api.openweathermap.org/data/2.5/forecast";
 var APP_ID = "&APPID=dcdfa133415e1fa8eddae2f34f5b07a4&units=metric";
 var ApiMeteoService = /** @class */ (function () {
     function ApiMeteoService(http) {
@@ -1239,7 +1239,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Beavis\Desktop\angular\meteo\test-ametix\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Beavis\Desktop\angular\meteo\test-ametix\Test-Ametix\src\main.ts */"./src/main.ts");
 
 
 /***/ })

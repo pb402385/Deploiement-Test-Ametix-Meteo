@@ -596,8 +596,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Beavis\Desktop\angular\meteo\test-ametix\src\assets\css\app.css */"./src/assets/css/app.css");
-module.exports = __webpack_require__(/*! C:\Users\Beavis\Desktop\angular\meteo\test-ametix\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! C:\Users\Beavis\Desktop\angular\meteo\test-ametix\Test-Ametix\src\assets\css\app.css */"./src/assets/css/app.css");
+module.exports = __webpack_require__(/*! C:\Users\Beavis\Desktop\angular\meteo\test-ametix\Test-Ametix\src\styles.css */"./src/styles.css");
 
 
 /***/ })
