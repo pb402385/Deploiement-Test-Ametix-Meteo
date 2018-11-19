@@ -36,7 +36,7 @@
           <th mat-header-cell *matHeaderCellDef mat-sort-header [ngClass]="'customWidthVille customTH'"> Ville </th>
           <td mat-cell *matCellDef="let element" [ngClass]="'customWidthClassVille'"> 
             {{element.ville}}
-            <a class="link" href="./detail?id={{element.id}}">
+            <a class="link" [routerLink]="['/detail?id={{element.id}}']"">
               <mat-icon>error_outline</mat-icon>
             </a>
           </td>
